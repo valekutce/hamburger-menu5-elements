@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:wght@100&family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+  font-family: 'Neucha', cursive;
+  font-weight: 500;
+  height: 100%;
+  color: #424949;
+  background-color: #ECF0F1;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.group {
+  width: 90%;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.group#group5 {
+  background-color: #868686;
+}
+button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  padding: 0;
+}
+button:focus {
+  outline: none;
+}
+
+input[type=checkbox] {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type=checkbox]:focus {
+  outline: none;
+}
+
+button span {
+  display: block;
+  pointer-events: none;
+}
+button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  padding: 0;
+}
+button:focus {
+  outline: none;
+}
+
+input[type=checkbox] {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type=checkbox]:focus {
+  outline: none;
+}
+
+button span {
+  display: block;
+  pointer-events: none;
+}
+#toggler_5-1 span {
+  top: 40%;
+  transform: translateY(-50%);
+  transition: transform 350ms ease;
+  width: 100%;
+}
+#toggler_5-1 span, #toggler_5-1 span::before, #toggler_5-1 span::after {
+  position: absolute;
+  left: 0;
+  height: 9px;
+}
+#toggler_5-1 span::before, #toggler_5-1 span::after {
+  content: "";
+  display: block;
+  top: 0;
+  width: 50px;
+  background-color: #C0C0C0;
+}
+#toggler_5-1 span::before {
+  transform: rotateZ(-45deg) translateX(-12px) translateY(12px);
+  transform-origin: bottom left;
+}
+#toggler_5-1 span::after {
+  transform: rotateZ(45deg) translateX(18px) translateY(6px);
+  transform-origin: bottom right;
+}
+#toggler_5-1 input:checked + span {
+  transform: rotateX(180deg);
+}
+
+#toggler_5-2 span {
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+#toggler_5-2 span, #toggler_5-2 span::before, #toggler_5-2 span::after {
+  position: absolute;
+  left: 0;
+  height: 9px;
+}
+#toggler_5-2 span::before, #toggler_5-2 span::after {
+  content: "";
+  display: block;
+  top: 0;
+  width: 50px;
+  background-color: #C0C0C0;
+  transition: transform 350ms ease;
+}
+#toggler_5-2 span::before {
+  transform: rotateZ(-45deg) translateX(-12px) translateY(12px);
+  transform-origin: bottom left;
+}
+#toggler_5-2 span::after {
+  transform: rotateZ(45deg) translateX(18px) translateY(6px);
+  transform-origin: bottom right;
+}
+#toggler_5-2 input:checked + span::before {
+  transform: rotateZ(-45deg) translateX(9px) translateY(33px);
+}
+#toggler_5-2 input:checked + span::after {
+  transform: rotateZ(45deg) translateX(-3px) translateY(27px);
+}
+
+#toggler_5-3 span {
+  top: 40%;
+  transform: rotateZ(0) translateX(0) translateY(-50%);
+  transition: transform 350ms ease;
+  width: 100%;
+}
+#toggler_5-3 span, #toggler_5-3 span::before, #toggler_5-3 span::after {
+  position: absolute;
+  left: 0;
+  height: 9px;
+}
+#toggler_5-3 span::before, #toggler_5-3 span::after {
+  content: "";
+  display: block;
+  top: 0;
+  width: 50px;
+  background-color: #C0C0C0;
+}
+#toggler_5-3 span::before {
+  transform: rotateZ(-45deg) translateX(-12px) translateY(12px);
+  transform-origin: bottom left;
+  transition: transform 350ms ease;
+}
+#toggler_5-3 span::after {
+  transform: rotateZ(45deg) translateX(18px) translateY(6px);
+  transform-origin: bottom right;
+}
+#toggler_5-3 input:checked + span {
+  transform: rotateZ(-90deg) translateX(-10px) translateY(14px);
+}
+#toggler_5-3 input:checked + span::before {
+  transform: rotateZ(-45deg) translateX(30px) translateY(12px);
+}
+
+#toggler_5-4 span {
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+  transition: transform 700ms ease;
+}
+#toggler_5-4 span, #toggler_5-4 span::before, #toggler_5-4 span::after {
+  position: absolute;
+  left: 0;
+  height: 9px;
+}
+#toggler_5-4 span::before, #toggler_5-4 span::after {
+  content: "";
+  display: block;
+  top: 0;
+  width: 50px;
+  background-color: #C0C0C0;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+#toggler_5-4 span::before {
+  transform: rotateZ(-45deg) translateX(-12px) translateY(12px);
+  transform-origin: bottom left;
+  animation-name: t_5-4_before_forwards;
+}
+#toggler_5-4 span::after {
+  transform: rotateZ(45deg) translateX(18px) translateY(6px);
+  transform-origin: bottom right;
+  animation-name: t_5-4_after_forwards;
+}
+#toggler_5-4 span.disabled::before, #toggler_5-4 span.disabled::after {
+  animation: none;
+}
+#toggler_5-4 input.input-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#toggler_5-4 input.input-1:not(:checked) ~ span::before, #toggler_5-4 input.input-1:not(:checked) ~ span::after {
+  animation-name: none;
+}
+#toggler_5-4 input.input-1:checked {
+  display: none;
+}
+#toggler_5-4 input.input-1:checked ~ span {
+  transform: translateY(34px);
+}
+#toggler_5-4 input.input-2:checked + span {
+  transform: translateY(-50%);
+}
+#toggler_5-4 input.input-2:checked + span::before {
+  animation-name: t_5-4_before_backwards;
+}
+#toggler_5-4 input.input-2:checked + span::after {
+  animation-name: t_5-4_after_backwards;
+}
+@keyframes t_5-4_before_forwards {
+  0% {
+    width: 50px;
+    transform: rotateZ(-45deg) translateX(-12px) translateY(12px);
+  }
+  50% {
+    width: 9px;
+    transform: rotateZ(-45deg) translateX(29.5px) translateY(12px);
+  }
+  100% {
+    width: 50px;
+    transform: rotateZ(-45deg) translateX(29.5px) translateY(12px);
+  }
+}
+@keyframes t_5-4_after_forwards {
+  0% {
+    width: 50px;
+    transform: rotateZ(45deg) translateX(18px) translateY(6px);
+  }
+  50% {
+    width: 9px;
+    transform: rotateZ(45deg) translateX(5.5px) translateY(-22px);
+  }
+  100% {
+    width: 50px;
+    transform: rotateZ(45deg) translateX(-23.5px) translateY(6px);
+  }
+}
+@keyframes t_5-4_before_backwards {
+  0% {
+    width: 50px;
+    transform: rotateZ(-45deg) translateX(29.5px) translateY(12px);
+  }
+  50% {
+    width: 9px;
+    transform: rotateZ(-45deg) translateX(29.5px) translateY(12px);
+  }
+  100% {
+    width: 50px;
+    transform: rotateZ(-45deg) translateX(-12px) translateY(12px);
+  }
+}
+@keyframes t_5-4_after_backwards {
+  0% {
+    width: 50px;
+    transform: rotateZ(45deg) translateX(-23.5px) translateY(6px);
+  }
+  50% {
+    width: 9px;
+    transform: rotateZ(45deg) translateX(5.5px) translateY(-22px);
+  }
+  100% {
+    width: 50px;
+    transform: rotateZ(45deg) translateX(18px) translateY(6px);
+  }
+}
+.toggler {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.toggler[id^=toggler_5] {
+  background-color: #161616;
+}
+.toggler::after {
+  content: attr(id);
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-size: 12px;
+  font-family: monospace;
+}
